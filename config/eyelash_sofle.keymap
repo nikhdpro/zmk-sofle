@@ -72,7 +72,7 @@
         klist: klist {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp MINUS &kp LEFT_BRACKET &kp RIGHT_BRACKET>;
+            bindings = <&kp MINUS &kp SPACE &kp LBKT &kp SPACE &kp RIGHT_BRACKET>;
             label = "KLIST";
         };
 
@@ -101,11 +101,11 @@
 
         layer_1 {
             bindings = <
-&kp ESC   &kp F1  &kp F2  &kp F3                &kp F4                 &kp F5        &mmv MOVE_UP     &kp F6             &kp F7         &kp F8        &kp F9          &kp F10                &kp F11
-&trans    &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans        &mmv MOVE_DOWN   &kp N7             &kp N8         &kp N9        &kp SLASH       &kp LEFT_PARENTHESIS   &kp F12
-&trans    &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans        &mmv MOVE_LEFT   &kp NUMBER_4       &kp N5         &kp NUMBER_6  &kp ASTERISK    &kp RIGHT_PARENTHESIS  &kp LC(INS)
-&kp CAPS  &trans  &trans  &kp LC(INS)           &kp LS(INS)            &tpathbold    &mmv MOVE_RIGHT  &kp NUMBER_1       &kp NUMBER_2   &kp NUMBER_3  &kp MINUS       &kp BSLH               &kp LS(INS)
-&trans    &trans  &trans  &trans                &trans                 &trans        &mkp LCLK        &kp LA(BACKSPACE)  &kp BACKSPACE  &trans        &kp KP_NUMLOCK  &kp PLUS
+&kp ESC   &kp F1  &kp F2           &kp F3                &kp F4                 &kp F5        &mmv MOVE_UP     &kp F6             &kp F7         &kp F8        &kp F9          &kp F10                &kp F11
+&trans    &trans  &kp NON_US_HASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDER     &mmv MOVE_DOWN   &kp N7             &kp N8         &kp N9        &kp N0          &kp LEFT_PARENTHESIS   &kp F12
+&trans    &trans  &trans           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL     &mmv MOVE_LEFT   &kp NUMBER_4       &kp N5         &kp NUMBER_6  &kp ASTERISK    &kp RIGHT_PARENTHESIS  &kp LC(INS)
+&kp CAPS  &trans  &trans           &kp LC(INS)           &kp LS(INS)            &tpathbold    &mmv MOVE_RIGHT  &kp NUMBER_1       &kp NUMBER_2   &kp NUMBER_3  &kp MINUS       &kp BSLH               &kp LS(INS)
+&trans    &trans  &trans           &trans                &trans                 &trans        &mkp LCLK        &kp LA(BACKSPACE)  &kp BACKSPACE  &trans        &kp KP_NUMLOCK  &kp PLUS
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -113,11 +113,11 @@
 
         layer_2 {
             bindings = <
-&trans                             &trans  &trans                             &trans     &trans     &trans       &mmv MOVE_UP     &trans        &trans    &trans  &trans  &kp LA(DEL)           &kp DEL
-&trans                             &trans  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &trans     &trans     &trans       &mmv MOVE_DOWN   &kp SLASH     &trans    &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&trans                             &trans  &trans                             &trans     &trans     &trans       &mmv MOVE_LEFT   &kp ASTERISK  &kp HASH  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans                             &trans  &trans                             &kp LC(C)  &kp LC(V)  &trans       &mmv MOVE_RIGHT  &kp MINUS     &klist    &trans  &trans  &trans                &trans
-&kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &trans  &trans                             &trans     &trans     &kp UNDER    &mkp LCLK        &trans        &trans    &trans  &trans  &trans
+&trans                             &trans  &trans                             &trans     &trans     &trans       &mmv MOVE_UP     &trans        &trans     &trans          &kp PAGE_UP     &kp LA(DEL)           &kp DEL
+&trans                             &trans  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &trans     &trans     &trans       &mmv MOVE_DOWN   &kp SLASH     &kp EQUAL  &trans          &kp PAGE_DOWN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&trans                             &trans  &trans                             &trans     &trans     &trans       &mmv MOVE_LEFT   &kp ASTERISK  &kp HASH   &trans          &kp UP_ARROW    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans                             &trans  &trans                             &kp LC(C)  &kp LC(V)  &trans       &mmv MOVE_RIGHT  &kp MINUS     &klist     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT             &trans
+&kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &trans  &trans                             &trans     &trans     &kp UNDER    &mkp LCLK        &trans        &trans     &trans          &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
