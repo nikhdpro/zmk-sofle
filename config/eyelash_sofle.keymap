@@ -48,17 +48,17 @@
         compatible = "zmk,combos";
 
         moveTo_L1 {
-            bindings = <&to 0>;
+            bindings = <&tog 1>;
             key-positions = <56 55>;
         };
 
         moveTo_L2 {
-            bindings = <&to 0>;
+            bindings = <&tog 2>;
             key-positions = <55 61>;
         };
 
         moveTo_L3 {
-            bindings = <&to 0>;
+            bindings = <&tog 3>;
             key-positions = <55 26>;
         };
     };
@@ -99,11 +99,11 @@
 
         code_move {
             bindings = <
-&kp ESC       &kp F1           &kp F2          &kp F3                &kp F4                 &kp F5             &mmv MOVE_UP     &kp F6        &kp F7              &kp F8               &kp F9     &kp F10        &kp F11
-&kp GRAVE     &kp NON_US_HASH  &kp LEFT_BRACE  &kp LBKT              &kp RBKT               &kp RIGHT_BRACE    &mmv MOVE_DOWN   &kp LS(DQT)   &kp KP_PLUS         &kp KP_SUBTRACT      &kp ASTRK  &kp KP_DIVIDE  &kp F12
-&trans        &kp LEFT_SHIFT   &trans          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HOME           &mmv MOVE_LEFT   &kp APOS      &kp LEFT            &kp RIGHT            &kp UP     &kp DOWN       &kp AT
-&kp CAPSLOCK  &trans           &trans          &kp LS(C)             &kp LS(INSERT)         &kp END            &mmv MOVE_RIGHT  &kp KP_EQUAL  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp PIPE   &kp BACKSLASH  &trans
-&trans        &trans           &trans          &trans                &trans                 &trans             &mkp LCLK        &kp HOME      &kp END             &trans               &trans     &trans
+&kp ESC       &kp F1           &kp F2          &kp F3                &kp F4                 &kp F5             &mmv MOVE_UP     &kp F6        &kp F7              &kp F8               &kp F9         &kp F10        &kp F11
+&kp GRAVE     &kp NON_US_HASH  &kp LEFT_BRACE  &kp LBKT              &kp RBKT               &kp RIGHT_BRACE    &mmv MOVE_DOWN   &kp LS(DQT)   &kp KP_PLUS         &kp KP_SUBTRACT      &kp ASTRK      &kp KP_DIVIDE  &kp F12
+&trans        &kp LEFT_SHIFT   &trans          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HOME           &mmv MOVE_LEFT   &kp APOS      &kp LEFT            &kp RIGHT            &kp UP         &kp DOWN       &kp AT_SIGN
+&kp CAPSLOCK  &trans           &trans          &kp LS(C)             &kp LS(INSERT)         &kp END            &mmv MOVE_RIGHT  &kp KP_EQUAL  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp RA(GRAVE)  &kp RA(MINUS)  &trans
+&trans        &trans           &trans          &trans                &trans                 &trans             &mkp LCLK        &kp HOME      &kp END             &trans               &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp KP_PLUS KP_MINUS>;
@@ -111,14 +111,14 @@
 
         digipath_misc {
             bindings = <
-&trans                             &kp NUMBER_1  &kp NUMBER_2                       &kp NUMBER_3  &kp NUMBER_4    &kp N5          &mmv MOVE_UP     &trans        &trans     &kp HOME        &kp PAGE_UP     &kp LA(DEL)           &kp DEL
-&trans                             &trans        &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp MINUS     &kp PLUS        &kp NUMBER_6    &mmv MOVE_DOWN   &kp SLASH     &kp EQUAL  &kp END         &kp PAGE_DOWN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&trans                             &trans        &trans                             &trans        &trans          &trans          &mmv MOVE_LEFT   &kp ASTERISK  &kp HASH   &trans          &kp UP_ARROW    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans                             &trans        &trans                             &kp LC(C)     &kp LS(INSERT)  &trans          &mmv MOVE_RIGHT  &kp MINUS     &kp PIPE   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT             &trans
-&kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &trans        &trans                             &trans        &trans          &kp UNDER       &mkp LCLK        &trans        &trans     &trans          &trans          &trans
+&trans       &kp NUMBER_1  &kp NUMBER_2                       &kp NUMBER_3  &kp NUMBER_4    &kp N5          &mmv MOVE_UP     &trans        &trans     &kp HOME        &kp PAGE_UP     &kp LA(DEL)           &kp DEL
+&trans       &trans        &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp MINUS     &kp PLUS        &kp NUMBER_6    &mmv MOVE_DOWN   &kp SLASH     &kp EQUAL  &kp END         &kp PAGE_DOWN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&trans       &trans        &trans                             &trans        &trans          &trans          &mmv MOVE_LEFT   &kp ASTERISK  &kp HASH   &trans          &kp UP_ARROW    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans       &trans        &trans                             &kp LC(C)     &kp LS(INSERT)  &trans          &mmv MOVE_RIGHT  &kp MINUS     &kp PIPE   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT             &trans
+&kp LA(TAB)  &trans        &trans                             &trans        &trans          &kp UNDER       &mkp LCLK        &trans        &trans     &trans          &trans          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
+            sensor-bindings = <&inc_dec_kp KP_PLUS KP_MINUS>;
         };
 
         settings {
