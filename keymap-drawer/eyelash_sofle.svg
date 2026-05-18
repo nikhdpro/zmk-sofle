@@ -632,24 +632,24 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="269" y="258" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="283" y="271" class="combo tap layer-activator">0</text>
+<a href="#code_move">
+<text x="283" y="271" class="combo tap layer-activator"><tspan style="font-size: 67%">code_move</tspan></text>
 </a><text x="283" y="282" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <path d="M462,259 l-191,0" class="combo"/>
 <path d="M462,259 l191,0" class="combo"/>
 <rect rx="6" ry="6" x="448" y="246" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="462" y="259" class="combo tap layer-activator">0</text>
+<a href="#digipath_misc">
+<text x="462" y="259" class="combo tap layer-activator"><tspan style="font-size: 60%">digipath_…</tspan></text>
 </a><text x="462" y="270" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
 <path d="M140,214 l95,38" class="combo"/>
 <path d="M140,214 l-95,-38" class="combo"/>
 <rect rx="6" ry="6" x="126" y="201" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="140" y="214" class="combo tap layer-activator">0</text>
+<a href="#settings">
+<text x="140" y="214" class="combo tap layer-activator"><tspan style="font-size: 75%">settings</tspan></text>
 </a><text x="140" y="225" class="combo hold">toggle</text>
 </g>
 </g>
@@ -923,13 +923,18 @@ rect.held, rect.combo.held {
 <g transform="translate(784, 203)" class="key keypos-49">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">|</text>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.3em">AltGr</tspan><tspan x="0" dy="1.2em">+`</tspan>
+</text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">AltGr+~</tspan></text>
 </g>
 <g transform="translate(840, 224)" class="key keypos-50">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">\</text>
-<text x="0" y="-24" class="key shifted">|</text>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.3em">AltGr</tspan><tspan x="0" dy="1.2em">+-</tspan>
+</text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">AltGr+_</tspan></text>
 </g>
 <g transform="translate(896, 224)" class="key trans keypos-51">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -997,24 +1002,24 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="269" y="258" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="283" y="271" class="combo tap layer-activator">0</text>
+<a href="#code_move">
+<text x="283" y="271" class="combo tap layer-activator"><tspan style="font-size: 67%">code_move</tspan></text>
 </a><text x="283" y="282" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <path d="M462,259 l-191,0" class="combo"/>
 <path d="M462,259 l191,0" class="combo"/>
 <rect rx="6" ry="6" x="448" y="246" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="462" y="259" class="combo tap layer-activator">0</text>
+<a href="#digipath_misc">
+<text x="462" y="259" class="combo tap layer-activator"><tspan style="font-size: 60%">digipath_…</tspan></text>
 </a><text x="462" y="270" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
 <path d="M140,214 l95,38" class="combo"/>
 <path d="M140,214 l-95,-38" class="combo"/>
 <rect rx="6" ry="6" x="126" y="201" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="140" y="214" class="combo tap layer-activator">0</text>
+<a href="#settings">
+<text x="140" y="214" class="combo tap layer-activator"><tspan style="font-size: 75%">settings</tspan></text>
 </a><text x="140" y="225" class="combo hold">toggle</text>
 </g>
 </g>
@@ -1300,9 +1305,7 @@ rect.held, rect.combo.held {
 <g transform="translate(392, 217)" class="key keypos-52">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 86%">AC</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">DESKTOP</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">…</tspan>
-</text>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-tab"/>
 </g>
 <g transform="translate(140, 259)" class="key trans keypos-53">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1360,24 +1363,24 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="269" y="258" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="283" y="271" class="combo tap layer-activator">0</text>
+<a href="#code_move">
+<text x="283" y="271" class="combo tap layer-activator"><tspan style="font-size: 67%">code_move</tspan></text>
 </a><text x="283" y="282" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <path d="M462,259 l-191,0" class="combo"/>
 <path d="M462,259 l191,0" class="combo"/>
 <rect rx="6" ry="6" x="448" y="246" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="462" y="259" class="combo tap layer-activator">0</text>
+<a href="#digipath_misc">
+<text x="462" y="259" class="combo tap layer-activator"><tspan style="font-size: 60%">digipath_…</tspan></text>
 </a><text x="462" y="270" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
 <path d="M140,214 l95,38" class="combo"/>
 <path d="M140,214 l-95,-38" class="combo"/>
 <rect rx="6" ry="6" x="126" y="201" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="140" y="214" class="combo tap layer-activator">0</text>
+<a href="#settings">
+<text x="140" y="214" class="combo tap layer-activator"><tspan style="font-size: 75%">settings</tspan></text>
 </a><text x="140" y="225" class="combo hold">toggle</text>
 </g>
 </g>
@@ -1754,24 +1757,24 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="269" y="258" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="283" y="271" class="combo tap layer-activator">0</text>
+<a href="#code_move">
+<text x="283" y="271" class="combo tap layer-activator"><tspan style="font-size: 67%">code_move</tspan></text>
 </a><text x="283" y="282" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <path d="M462,259 l-191,0" class="combo"/>
 <path d="M462,259 l191,0" class="combo"/>
 <rect rx="6" ry="6" x="448" y="246" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="462" y="259" class="combo tap layer-activator">0</text>
+<a href="#digipath_misc">
+<text x="462" y="259" class="combo tap layer-activator"><tspan style="font-size: 60%">digipath_…</tspan></text>
 </a><text x="462" y="270" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
 <path d="M140,214 l95,38" class="combo"/>
 <path d="M140,214 l-95,-38" class="combo"/>
 <rect rx="6" ry="6" x="126" y="201" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="140" y="214" class="combo tap layer-activator">0</text>
+<a href="#settings">
+<text x="140" y="214" class="combo tap layer-activator"><tspan style="font-size: 75%">settings</tspan></text>
 </a><text x="140" y="225" class="combo hold">toggle</text>
 </g>
 </g>
