@@ -101,7 +101,7 @@
             bindings = <
 &kp ESC       &kp F1           &kp F2          &kp F3                &kp F4                 &kp F5             &mmv MOVE_UP     &kp F6        &kp F7              &kp F8               &kp F9         &kp F10        &kp F11
 &kp GRAVE     &kp NON_US_HASH  &kp LEFT_BRACE  &kp LBKT              &kp RBKT               &kp RIGHT_BRACE    &mmv MOVE_DOWN   &kp LS(DQT)   &kp KP_PLUS         &kp KP_SUBTRACT      &kp ASTRK      &kp KP_DIVIDE  &kp F12
-&trans        &kp LEFT_SHIFT   &trans          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HOME           &mmv MOVE_LEFT   &kp APOS      &kp LEFT            &kp RIGHT            &kp UP         &kp DOWN       &kp AT_SIGN
+&trans        &kp LEFT_SHIFT   &kp LA(TAB)     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HOME           &mmv MOVE_LEFT   &kp APOS      &kp LEFT            &kp RIGHT            &kp UP         &kp DOWN       &kp AT_SIGN
 &kp CAPSLOCK  &trans           &trans          &kp LS(C)             &kp LS(INSERT)         &kp END            &mmv MOVE_RIGHT  &kp KP_EQUAL  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp RA(GRAVE)  &kp RA(MINUS)  &trans
 &trans        &trans           &trans          &trans                &trans                 &trans             &mkp LCLK        &kp HOME      &kp END             &trans               &trans         &trans
             >;
