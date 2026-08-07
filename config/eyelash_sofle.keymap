@@ -99,23 +99,23 @@
 
         code_move {
             bindings = <
-&kp ESC       &kp F1           &kp F2          &kp F3                &kp F4                 &kp F5             &mmv MOVE_UP     &kp F6        &kp F7              &kp F8               &kp F9         &kp F10        &kp F11
-&kp GRAVE     &kp NON_US_HASH  &kp LEFT_BRACE  &kp LBKT              &kp RBKT               &kp RIGHT_BRACE    &mmv MOVE_DOWN   &kp LS(DQT)   &kp KP_PLUS         &kp KP_SUBTRACT      &kp ASTRK      &kp KP_DIVIDE  &kp F12
-&trans        &kp LEFT_SHIFT   &kp LA(TAB)     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HOME           &mmv MOVE_LEFT   &kp APOS      &kp LEFT            &kp RIGHT            &kp UP         &kp DOWN       &kp AT_SIGN
-&kp CAPSLOCK  &trans           &trans          &kp LS(C)             &kp LS(INSERT)         &kp END            &mmv MOVE_RIGHT  &kp KP_EQUAL  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp RA(GRAVE)  &kp RA(MINUS)  &trans
-&trans        &trans           &trans          &trans                &trans                 &trans             &mkp LCLK        &kp HOME      &kp END             &trans               &trans         &trans
+&kp ESC    &kp F1           &kp F2          &kp F3                &kp F4                 &kp F5              &mmv MOVE_UP     &kp F6          &kp F7              &kp F8               &kp F9         &kp F10        &kp F11
+&kp GRAVE  &kp NON_US_HASH  &kp LEFT_BRACE  &kp LBKT              &kp RBKT               &kp RIGHT_BRACE     &mmv MOVE_DOWN   &trans          &kp KP_PLUS         &kp KP_SUBTRACT      &kp ASTRK      &kp KP_DIVIDE  &kp F12
+&trans     &kp LGUI         &kp LA(TAB)     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW      &kp UP_ARROW         &kp RIGHT      &trans         &kp AT_SIGN
+&trans     &kp LS(LGUI)     &kp LA(LCMD)    &kp LS(C)             &kp LS(INSERT)         &kp END             &mmv MOVE_RIGHT  &kp KP_EQUAL    &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp RA(GRAVE)  &kp RA(MINUS)  &trans
+&trans     &trans           &trans          &trans                &trans                 &trans              &mkp LCLK        &kp HOME        &kp END             &trans               &trans         &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp KP_PLUS KP_MINUS>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
 
         digipath_misc {
             bindings = <
-&trans       &kp NUMBER_1  &kp NUMBER_2                       &kp NUMBER_3  &kp NUMBER_4    &kp N5          &mmv MOVE_UP     &trans        &trans     &kp HOME        &kp PAGE_UP     &kp LA(DEL)           &kp DEL
-&trans       &trans        &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp MINUS     &kp PLUS        &kp NUMBER_6    &mmv MOVE_DOWN   &kp SLASH     &kp EQUAL  &kp END         &kp PAGE_DOWN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&trans       &trans        &trans                             &trans        &trans          &trans          &mmv MOVE_LEFT   &kp ASTERISK  &kp HASH   &trans          &kp UP_ARROW    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans       &trans        &trans                             &kp LC(C)     &kp LS(INSERT)  &trans          &mmv MOVE_RIGHT  &kp MINUS     &kp PIPE   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT             &trans
-&kp LA(TAB)  &trans        &trans                             &trans        &trans          &kp UNDER       &mkp LCLK        &trans        &trans     &trans          &trans          &trans
+&trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp N5          &mmv MOVE_UP     &trans        &trans     &kp HOME        &kp PAGE_UP     &kp LA(DEL)           &kp DEL
+&trans        &trans        &trans        &trans        &trans          &kp NUMBER_6    &mmv MOVE_DOWN   &kp CARET     &kp EQUAL  &kp END         &kp PAGE_DOWN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&trans        &trans        &kp M         &trans        &trans          &trans          &mmv MOVE_LEFT   &kp ASTERISK  &kp SLASH  &trans          &kp UP_ARROW    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp CAPSLOCK  &trans        &trans        &kp LC(C)     &kp LS(INSERT)  &trans          &mmv MOVE_RIGHT  &kp MINUS     &kp PIPE   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT             &trans
+&kp LA(TAB)   &trans        &trans        &trans        &trans          &kp UNDER       &mkp LCLK        &trans        &trans     &trans          &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp KP_PLUS KP_MINUS>;
