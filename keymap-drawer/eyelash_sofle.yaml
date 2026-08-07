@@ -86,28 +86,28 @@ layers:
   - {t: ']', s: '}'}
   - '}'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - Sft+"
+  - {t: '$$mdi:transfer$$', type: trans}
   - KP PLUS
   - KP SUBTRACT
   - '*'
   - KP DIVIDE
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-shift$$
+  - LGUI
   - Alt+$$mdi:keyboard-tab$$
   - (
   - )
-  - HOME
+  - '>'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '''', s: '"'}
   - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-right-bold$$
-  - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - '@'
-  - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+LGUI
+  - Alt+$$mdi:apple-keyboard-command$$
   - Sft+C
   - Sft+Ins
   - END
@@ -146,12 +146,12 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - AC DESKTOP SHOW ALL WINDOWS
-  - {t: '-', s: _}
-  - +
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '6'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: /, s: '?'}
+  - ^
   - {t: '=', s: +}
   - END
   - PgDn
@@ -159,18 +159,18 @@ layers:
   - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - M
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - '*'
-  - '#'
+  - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-up-bold$$
   - (
   - )
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+C
